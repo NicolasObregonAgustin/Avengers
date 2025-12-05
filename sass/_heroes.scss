@@ -1,0 +1,107 @@
+
+// Estilos generales
+body.cuerpo {
+    background-color: $color-background;
+    font-family: $font-primary;
+    color: $color-text;
+
+    h1 {
+        color: $color-title;
+        text-align: center;
+    }
+
+    p {
+        color: $color-paragraph-alt;
+        text-align: center;
+        font-size: 24px;
+
+        &.pp {
+            color: $color-paragraph;
+            font-size: 1.5rem;
+        }
+    }
+
+    // Navbar
+    .navbar {
+        background-color: darken($color-background, 5%);
+        font-family: $font-primary;
+
+        .navbar-brand {
+            color: $color-text;
+            font-weight: bold;
+
+            &:hover {
+                color: $color-link-hover;
+            }
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $color-text;
+
+                    &.active {
+                        color: $color-subtitle;
+                        font-weight: bold;
+                    }
+
+                    &:hover {
+                        color: $color-link-hover;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler {
+            border-color: $color-text;
+
+            .navbar-toggler-icon {
+                background-color: $color-text;
+            }
+        }
+    }
+
+    // Fotos
+    .foto {
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+
+            &.v {
+                width: $img-width-large;
+            }
+        }
+    }
+
+    .v {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    // Footer
+    footer {
+        text-align: center;
+        color: $color-footer;
+        margin-top: 50px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        a {
+            margin: 0 10px;
+
+            img {
+                width: 50px;
+                height: auto;
+            }
+
+            &:hover img {
+                filter: brightness(1.2);
+            }
+        }
+    }
+}

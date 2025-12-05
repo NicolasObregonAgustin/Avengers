@@ -1,0 +1,205 @@
+/*index*/
+
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+
+*{
+    font-family: 'Science Gothic', sans-serif;
+    color: whitesmoke;
+}
+.cuerpo{
+    background-color: rgb(0, 0, 0);
+    
+}   
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.pp{
+    color: rgb(247, 49, 0);
+    text-align: center;
+    font-size: 150%;
+}
+
+.creador {
+    display: grid;
+    grid-template-columns: auto 1fr; /* columna para img | columna para info */
+    align-items: center; /* centra verticalmente */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* centra el contenedor general */
+}
+
+.creador img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    justify-self: start; /* fuerza que quede al borde izquierdo */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* centra verticalmente */
+    align-items: center;       /* centra horizontalmente */
+}
+
+.comic{
+    color:rgb(0, 217, 255);
+    text-align: center;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.crea{
+    color: antiquewhite;
+}
+
+
+
+/*Peliculas
+
+.pp{
+    color: rgb(247, 49, 0);
+    text-align: center;
+    font-size: 150%;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cuerpo{
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    color: white;
+    text-align: center;
+}
+*/
+p{
+    color: aqua;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.v{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*heroes
+.foto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cuerpo{
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    color: aqua;
+    text-align: center;
+    font-size: 24px;
+}
+
+*/
+
+/*Villanos
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cuerpo{
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    color: aqua;
+    text-align: center;
+    font-size: 24px;
+}
+
+*/
+
+
+/*Mas
+
+h1{
+    color: white;
+    text-align: center;
+}*/
+
+
+.form{
+    text-align: center;
+    color: red;
+}
+
+.form :hover{
+    text-align: center;
+    color: rgb(17, 0, 255);
+    font-size: 20px;
+}
+
+.contacto{
+    color:rgb(255, 8, 0);
+}
+
+.contacto{
+    background-image:url(/imagenes/fondo11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.f{
+    color: rgb(0, 0, 0);
+}
+
+
+/*responsive*/
+
+@media (max-width: 600px) {
+    .creador {
+        grid-template-columns: 1fr;
+        /* imagen arriba, texto abajo */
+        text-align: center;
+    }
+
+    .creador img {
+        justify-self: center;
+        /* centra la imagen en móvil */
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,101 @@
+@use "variables" as v;
+
+body.contacto {
+    font-family: $font-primary;
+    background-image: $bg-contact;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color-text;
+
+    h1.contacto {
+        color: $color-contact-title;
+        text-align: center;
+    }
+
+    // Navbar
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.7);
+
+        .navbar-brand,
+        .nav-link {
+            color: whitesmoke;
+
+            &:hover {
+                color: $color-text-hover;
+            }
+
+            &.active {
+                font-weight: bold;
+            }
+        }
+
+        .navbar-toggler {
+            border-color: whitesmoke;
+
+            .navbar-toggler-icon {
+                background-color: whitesmoke;
+            }
+        }
+    }
+
+    // Formulario
+    .form {
+        text-align: center;
+        color: $color-text;
+
+        input,
+        textarea {
+            padding: $input-padding;
+            font-size: $input-font-size;
+            margin-bottom: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input.enviar,
+        input.reinciar {
+            padding: $btn-padding;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: rgb(255, 0, 0);
+
+            &:hover {
+                background-color: $color-text-hover;
+            }
+        }
+
+        &:hover {
+            color: $color-text-hover;
+            font-size: 20px;
+        }
+    }
+
+    // Footer
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        color: $color-footer;
+
+        h1.f {
+            margin-bottom: 15px;
+        }
+
+        a {
+            margin: 0 10px;
+
+            img {
+                width: auto;
+                max-height: 50px;
+            }
+
+            &:hover img {
+                filter: brightness(1.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@use "variables" as v;
+s
+body.cuerpo {
+    background-color: $bg-color;
+
+    h1 {
+        color: $h1-color;
+        text-align: center;
+    }
+
+    p {
+        color: $text-color;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    // Contenedor de villanos
+    .foto {
+        margin-bottom: 30px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+
+    .navbar {
+        background-color: darken($bg-color, 10%);
+
+        .navbar-brand,
+        .nav-link {
+            color: lighten($h1-color, 10%);
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+        }
+    }
+
+
+    footer {
+        text-align: center;
+        color: $h1-color;
+
+        img {
+            margin: 5px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@use "variables" as v;
+
+
+footer {
+        text-align: center;
+        color: $color-h1;
+
+        img {
+            margin: 5px;
+        }
+    }
+

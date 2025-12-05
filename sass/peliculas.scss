@@ -1,0 +1,56 @@
+@use "variables" as v;
+body.cuerpo {
+    background-color: $color-bg;
+
+    h1 {
+        color: $color-h1;
+        text-align: center;
+    }
+
+    p {
+        color: $color-text;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    
+    .pp {
+        color: $color-pp;
+        text-align: center;
+        font-size: 150%;
+    }
+
+    
+    .foto {
+        margin-bottom: 30px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+
+            &.v {
+                width: 800px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+
+    .navbar {
+        background-color: darken($color-bg, 10%);
+
+        .navbar-brand,
+        .nav-link {
+            color: lighten($color-h1, 10%);
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+        }
+    }
+
+}
